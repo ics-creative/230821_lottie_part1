@@ -13,15 +13,8 @@ body {
   background-color: white;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   gap: 64px;
-}
-
-@media (max-width: 768px) {
-  body {
-    margin: 64px 16px 0;
-    flex-direction: column;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,7 +23,26 @@ body {
   }
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 64px;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 64px 16px 0;
+    flex-direction: column;
+  }
+}
+
 .lottie-container {
+  width: 50px;
+  height: 50px;
+}
+
+.lottie-container__100 {
   width: 100px;
   height: 100px;
 }
