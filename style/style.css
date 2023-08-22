@@ -1,0 +1,73 @@
+/* ---------- レイアウト ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --color-black: #222;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  background-color: white;
+}
+
+@media (min-width: 769px) {
+  body {
+    place-content: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 64px;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin-top: 32px;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* ---------- Lottieの大きさ ---------- */
+.player-s {
+  width: 80px;
+  height: 80px;
+}
+
+.player-m {
+  width: 120px;
+  height: 120px;
+}
+
+.player-l {
+  width: 180px;
+  height: 180px;
+}
+
+.player-xl {
+  width: 240px;
+  height: 240px;
+}
+
+@media (max-width: 768px) {
+  .player-xl {
+    display: none;
+  }
+}
