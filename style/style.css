@@ -18,7 +18,7 @@ body {
   background-color: white;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 500px) {
   body {
     place-content: center;
   }
@@ -31,7 +31,7 @@ body {
   gap: 64px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 499px) {
   .wrapper {
     margin-top: 32px;
     flex-direction: column;
