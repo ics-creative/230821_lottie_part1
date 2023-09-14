@@ -24,12 +24,6 @@ body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #222;
-  }
-}
-
 .wrapper {
   display: flex;
   align-items: center;
